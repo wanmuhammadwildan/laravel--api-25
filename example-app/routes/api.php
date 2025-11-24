@@ -1,14 +1,16 @@
 <?php
 
-use Illuminate\Http\Request;
-use illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProductController;
-use App\Http\Controllers\VendorController;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\ProductCategoriesController;
+use App\Http\Controllers\Api\ProductController;
+use App\Http\Controllers\Api\ProductVariantController;
 
-Route::get('/', function () {
-    return('Hello, Laravel');
-    Route::resource('vendors', VendorController::class);
+Route::prefix('v1')->group(function () {
+    
+    Route::Resource('products', ProductController::class);
+    Route::Resource('product_categories', ProductCategoriesController ::class);
+Route::Resource('product_variants', ProductVariantController::class);
+   
+    
+
 });
-
-Route::get('/products', [ProductController::class, 'index']);
-
