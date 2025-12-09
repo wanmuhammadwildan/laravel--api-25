@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  #itemList li {
+    margin: 6px 0;
+  }
+  
+  .bg-btn {
+    margin-right: 6px;
+  }

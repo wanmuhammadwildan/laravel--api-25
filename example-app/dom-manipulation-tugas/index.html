@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tugas Manipulasi DOM</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>1. Daftar Dinamis</h2>
+  <input type="text" id="itemInput" placeholder="Tulis item..." />
+  <button id="addBtn">Tambah Item</button>
+  <ul id="itemList"></ul>
+
+  <hr />
+
+  <h2>2. Ubah Warna Background</h2>
+  <button class="bg-btn" data-color="red">Merah</button>
+  <button class="bg-btn" data-color="green">Hijau</button>
+  <button class="bg-btn" data-color="blue">Biru</button>
+
+  <hr />
+
+  <h2>3. Counter</h2>
+  <div id="counterContainer">
+    <button id="decrementBtn">-</button>
+    <span id="counterValue">0</span>
+    <button id="incrementBtn">+</button>
+    <button id="resetBtn">Reset</button>
+  </div>
+
+  <hr />
+
+  <h2>4. Toggle Tampilkan/Sembunyikan</h2>
+  <button id="toggleBtn">Tampilkan</button>
+  <p id="toggleParagraph" style="display:none;">Ini adalah paragraf yang bisa disembunyikan/dimunculkan.</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
